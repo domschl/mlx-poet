@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+.virtual_documents/
+bin/
+data/
+etc/
+example/
+include/
+lib/
+logs/
+model/
+share/
+pyvenv.cfg
