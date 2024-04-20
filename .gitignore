@@ -10,3 +10,4 @@ logs/
 model/
 share/
 pyvenv.cfg
+additional_texts.json
