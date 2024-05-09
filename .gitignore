@@ -11,3 +11,5 @@ model/
 share/
 pyvenv.cfg
 additional_texts.json
+indra_creds.json
+
