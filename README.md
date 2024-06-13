@@ -26,16 +26,7 @@ Things to adjust:
 
 - in `1. Project configuration`, adatapt `project_name`. The `use_preprocessed_data` to `False` only on first run. This will invoke the tokenizer and afterwards save the tokenized data to disk. On subsequent runs, set it to `True` to load the tokenized data from disk. The first tokenizer run can be very slow, depending on the size of the dataset.
 - in `2.1 Text data from Project Gutenberg`, adjust the `search_term` to the title or author of the book you want to download. By default a maximum of 40 books are downloaded. Consult the comments on how to tackle the download of more books.
-- Create a file `additional_texts.json` in the root directory of the project (next to `mlx_poet.ipynb`). Sample format is:
-
-```json
-{
-  "local_texts": ["/some/directory/that/contains/texts"],
-  "calibre": "/home/myuser/Calibre Library"
-}
-```
-- `local_texts` is a list of directories that contain text files. The files can be in TXT, MD, ORG, or PY format.
-- `calibre` is the path to your Calibre library. All books that are available in TXT format in your Calibre library will be used.
+- Create a file `additional_texts.json` in the root directory of the project (next to `mlx_poet.ipynb`). (see notebook)
 - in `3. Model metadata` adjust the number of transformer layers (`attn_layers`), the embedding size (`emb`) that is also used as sequence length by default.
 
 ## Not implemented yet:
